@@ -21,7 +21,7 @@ const FichaSchema = new mongoose.Schema({
         required: true
     },
     grupo_sanguineo: {
-        type: Date,
+        type: String,
         required: true
     },
     alergias: {

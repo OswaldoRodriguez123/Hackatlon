@@ -20,6 +20,10 @@ router.route('/:fichaId')
 /** DELETE /api/fichas/:fichaId - Delete ficha */
 .delete(Ficha.remove);
 
+router.route('/:pacienteId')
+    /** GET /api/fichas/:fichaId - Get ficha */
+    .get(Ficha.getFichaPaciente)
+
 /** Load ficha when API with fichaId route parameter is hit */
 router.param('fichaId', Ficha.load);
 
