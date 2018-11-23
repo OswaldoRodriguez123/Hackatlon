@@ -78,6 +78,7 @@ function remove(req, res, next) {
 }
 
 function getFichaPaciente(req, res) {
+    console.log(req.params)
     return Ficha.findOne({ 'paciente_id': req.params.pacienteId });
 }
 
