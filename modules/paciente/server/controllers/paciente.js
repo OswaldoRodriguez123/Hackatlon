@@ -1,4 +1,4 @@
-const Paciente = require('../models/paciente');
+const Paciente = require('../../../../modules/paciente/server/models/paciente');
 
 /**
  * Load paciente and append to req.

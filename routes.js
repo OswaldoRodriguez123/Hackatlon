@@ -1,7 +1,7 @@
 const express = require('express');
-const pacienteRoutes = require('./routes/paciente');
-const medicoRoutes = require('./routes/medico');
-const fichaRoutes = require('./routes/ficha');
+const pacienteRoutes = require('./modules/paciente/server/routes/paciente');
+const medicoRoutes = require('./modules/medico/server/routes/medico');
+const fichaRoutes = require('./modules/ficha/server/routes/ficha');
 
 const router = express.Router(); // eslint-disable-line new-cap
 

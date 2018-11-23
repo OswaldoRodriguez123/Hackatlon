@@ -1,4 +1,4 @@
-const Medico = require('../models/medico');
+const Medico = require('../../../../modules/medico/server/models/medico');
 
 /**
  * Load medico and append to req.

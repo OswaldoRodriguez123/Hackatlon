@@ -1,5 +1,5 @@
 const express = require('express');
-const Ficha = require('../controllers/ficha');
+const Ficha = require('../../../../modules/ficha/server/controllers/ficha');
 
 const router = express.Router(); // eslint-disable-line new-cap
 
@@ -19,10 +19,6 @@ router.route('/:fichaId')
 
 /** DELETE /api/fichas/:fichaId - Delete ficha */
 .delete(Ficha.remove);
-
-router.route('/paciente/:pacienteId')
-    /** GET /api/fichas/paciente/:pacienteId - Get fichas por paciente */
-    .get(Ficha.getFichasPaciente)
 
 /** Load ficha when API with fichaId route parameter is hit */
 router.param('fichaId', Ficha.load);
