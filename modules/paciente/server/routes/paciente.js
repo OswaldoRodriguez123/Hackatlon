@@ -1,5 +1,5 @@
 const express = require('express');
-const Paciente = require('../controllers/paciente');
+const Paciente = require('../../../../modules/paciente/server/controllers/paciente');
 
 const router = express.Router(); // eslint-disable-line new-cap
 

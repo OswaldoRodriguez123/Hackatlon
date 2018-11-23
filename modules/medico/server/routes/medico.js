@@ -1,5 +1,5 @@
 const express = require('express');
-const Medico = require('../controllers/medico');
+const Medico = require('../../../../modules/medico/server/controllers/medico');
 
 const router = express.Router(); // eslint-disable-line new-cap
 

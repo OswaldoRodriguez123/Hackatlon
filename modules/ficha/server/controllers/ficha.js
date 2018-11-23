@@ -1,4 +1,4 @@
-const Ficha = require('../models/ficha');
+const Ficha = require('../../../../modules/ficha/server/models/ficha');
 
 /**
  * Load ficha and append to req.
@@ -75,11 +75,6 @@ function remove(req, res, next) {
     ficha.remove()
         .then(deletedFicha => res.json(deletedFicha))
         .catch(e => next(e));
-}
-
-function getFichasPaciente(req, res, next) {
-    userModel.find({ $or: [{ email: req.body.email }, { username: req.body.username }] })
-        .exec(function(err, docs) {});
 }
 
 module.exports = { load, get, create, update, list, remove };
