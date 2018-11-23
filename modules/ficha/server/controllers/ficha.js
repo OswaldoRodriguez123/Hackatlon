@@ -77,4 +77,8 @@ function remove(req, res, next) {
         .catch(e => next(e));
 }
 
-module.exports = { load, get, create, update, list, remove };
+function getFichaPaciente(req, res) {
+    return Ficha.findOne({ 'paciente_id': req.params.pacienteId });
+}
+
+module.exports = { load, get, create, update, list, remove, getFichaPaciente };
