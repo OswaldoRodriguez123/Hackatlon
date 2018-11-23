@@ -1,0 +1,13 @@
+{
+    "name": "superhealth",
+    "version": "0.0.1",
+    "dependencies": {
+        "bootstrap": "4.0",
+        "jquery":"3.3.1",
+        "angularjs":"1.7.5",
+        "angular-socket-io":"0.7.0",
+        "angular-ui-router":"1.0.7",
+        "angular-animate":"1.7.5"
+    },
+       "ignoredDependencies": []
+}

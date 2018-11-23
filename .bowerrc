@@ -1,0 +1,25 @@
+{
+    "directory": "static/bower_components",
+    "registry": "https://registry.bower.io",
+    "shorthand-resolver": "git://github.com//.git",
+    "color": true,
+    "timeout": 60000,
+    "save": true,
+    "save-exact": true,
+    "strict-ssl": true,
+    "storage": {
+        "packages" : "~/.bower/packages",
+        "registry" : "~/.bower/registry",
+        "links" : "~/.bower/links"
+    },
+    "interactive": true,
+    "resolvers": [],
+    "shallowCloneHosts": [
+        ""
+    ],
+    "scripts": {
+        "preinstall": "",
+        "postinstall": "",
+        "preuninstall": ""
+    }
+  }
